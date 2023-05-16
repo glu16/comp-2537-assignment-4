@@ -13,6 +13,7 @@ img {
 }
 
 #gameGrid {
+  box-sizing: content-box;
   border: 2px tomato solid;
   width: 600px;
   height: 400px;
@@ -31,7 +32,8 @@ img {
 }
 
 .pokeCard {
-  width: 33.3%;
+  width: 200px;
+  height: 200px;
   position: relative;
   transition: transform 1s;
   perspective: 1000px;
