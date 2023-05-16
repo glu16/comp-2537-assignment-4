@@ -36,94 +36,91 @@
 
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-
   </head>
-  <header>
-    <div
-      id="difficulty"
-      class="btn-group btn-group-toggle m-3"
-      data-toggle="buttons"
-    >
-      <label class="btn btn-primary active">
-        <input
-          type="radio"
-          value="easy"
-          name="options"
-          id="option1"
-          autocomplete="off"
-          checked=""
-        />
-        Easy
-      </label>
-      <label class="btn btn-primary">
-        <input
-          type="radio"
-          value="medium"
-          name="options"
-          id="option2"
-          autocomplete="off"
-        />
-        Medium
-      </label>
-      <label class="btn btn-primary">
-        <input
-          type="radio"
-          value="hard"
-          name="options"
-          id="option3"
-          autocomplete="off"
-        />
-        Hard
-      </label>
-    </div>
-    <br />
-    <a href="index.html"><button class="btn btn-primary">Reset</button></a>
-    <button class="btn btn-primary" id="start">
-      Start!
-    </button>
-    <section id="info" style="">
-      <h1>Total Number of Pairs: <span id="total">3</span></h1>
-      <h1>Number of Matches: <span id="matches">3</span></h1>
-      <h1>Number of Pairs Left: <span id="left">0</span></h1>
-      <h1>Number of Clicks: <span id="clicks">11</span></h1>
-      <h1>
-        You got <span id="timer">100</span> seconds.
-        <span id="time">21</span> second<span id="s" style="">s</span> passed!
-      </h1>
-    </section>
-  </header>
-
   <body>
-    <div id="game_grid">
-      <div class="card">
+    <header>
+      <div
+        id="difficulty"
+        class="btn-group btn-group-toggle m-3"
+        data-toggle="buttons"
+      >
+        <label class="btn btn-primary active">
+          <input
+            type="radio"
+            value="easy"
+            name="options"
+            id="option1"
+            autocomplete="off"
+            checked=""
+          />
+          Easy
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            value="medium"
+            name="options"
+            id="option2"
+            autocomplete="off"
+          />
+          Medium
+        </label>
+        <label class="btn btn-primary">
+          <input
+            type="radio"
+            value="hard"
+            name="options"
+            id="option3"
+            autocomplete="off"
+          />
+          Hard
+        </label>
+      </div>
+      <br />
+      <button class="btn btn-primary" id="resetButton">Reset</button>
+      <button class="btn btn-primary" id="start">Start</button>
+
+      <section id="info">
+        <h1>Total Number of Pairs: <span id="total">3</span></h1>
+        <h1>Number of Matches: <span id="matches"></span></h1>
+        <h1>Number of Pairs Left: <span id="left"></span></h1>
+        <h1>Number of Clicks: <span id="clicks"></span></h1>
+        <h1>
+          You got <span id="timer"></span> seconds.
+          <span id="time"></span> seconds passed!
+        </h1>
+      </section>
+    </header>
+    <div id="gameGrid">
+      <div class="pokeCard">
         <img id="img1" class="front_face" src="001.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
-      <div class="card">
+      <div class="pokeCard">
         <img id="img2" class="front_face" src="002.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
-      <div class="card">
+      <div class="pokeCard">
         <img id="img3" class="front_face" src="003.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
-      <div class="card">
+      <div class="pokeCard">
         <img id="img4" class="front_face" src="001.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
-      <div class="card">
+      <div class="pokeCard">
         <img id="img5" class="front_face" src="002.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
-      <div class="card">
+      <div class="pokeCard">
         <img id="img6" class="front_face" src="003.png" alt="" />
         <img class="back_face" src="back.webp" alt="" />
       </div>
     </div>
-    <section id="themes" class="text-center" style="">
-      <button id="dark" class="btn btn-dark">Dark</button>
-      <button id="light" class="btn btn-light">light</button>
+    <section id="themes" class="text-center">
+      <button class="btn btn-dark" id="darkButton">Dark Mode</button>
+      <button class="btn btn-light" id="lightButton">Light Mode</button>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

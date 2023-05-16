@@ -2,7 +2,17 @@ body {
   margin: 0px;
 }
 
-#game_grid {
+header {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+#gameGrid {
   border: 2px tomato solid;
   width: 600px;
   height: 400px;
@@ -11,7 +21,16 @@ body {
   flex-wrap: wrap;
 }
 
-.card {
+#themes {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.btn {
+  margin: 0px 2px;
+}
+
+.pokeCard {
   width: 33.3%;
   position: relative;
   transition: transform 1s;
@@ -19,8 +38,14 @@ body {
   transform-style: preserve-3d;
 }
 
-img {
-  width: 100%;
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+.lightMode {
+  background-color: white;
+  color: black;
 }
 
 .front_face,
